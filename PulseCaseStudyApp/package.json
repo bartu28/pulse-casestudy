@@ -1,0 +1,49 @@
+{
+  "name": "pulsecasestudyapp",
+  "version": "1.0.0",
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web"
+  },
+  "dependencies": {
+    "@mikro-orm/core": "^5.7.10",
+    "@mikro-orm/sqlite": "^5.7.10",
+    "@rneui/base": "^4.0.0-rc.7",
+    "@rneui/themed": "^4.0.0-rc.7",
+    "@types/node": "^20.2.3",
+    "@types/react": "~18.0.27",
+    "expo": "~48.0.15",
+    "expo-linear-gradient": "~12.1.2",
+    "expo-sqlite": "~11.1.1",
+    "expo-status-bar": "~1.4.4",
+    "react": "18.2.0",
+    "react-native": "0.71.8",
+    "react-native-linear-gradient": "^2.6.2",
+    "react-native-mentions": "^1.1.4",
+    "react-native-mentions-editor": "^1.0.11",
+    "react-native-sqlite-storage": "^6.0.1",
+    "ts-node": "^10.9.1",
+    "expo-file-system": "~15.2.2",
+    "expo-asset": "~8.9.1"
+  },
+  "mikro-orm": {
+    "useTsNode": true,
+    "configPaths": [
+      "./src/mikro-orm.config.ts",
+      "./dist/mikro-orm.config.js"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.0",
+    "@mikro-orm/cli": "^5.7.10",
+    "@tsconfig/react-native": "^3.0.2",
+    "@types/jest": "^29.5.1",
+    "@types/react": "~18.0.27",
+    "@types/react-test-renderer": "^18.0.0",
+    "typescript": "^4.9.5"
+  },
+  "private": true
+}
